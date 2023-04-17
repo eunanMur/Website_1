@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <script src="home.js"></script>
+  <title>Cloud Form</title>
+</head>
+<body background="background-image.jpg">
+    <header>
+      <nav>
+        <ul class="navigation">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="goToHome()">Home
+              <i class="fa fa-caret-down"></i>
+            </button>
+          </div>
+        </ul>
+      </nav>
+    </header>
+  <div class="fcontainer">
+    <h2>Contact Form</h2>
+    <form name="testForm" action="index.html" method="get">
+      <label for="fname">First Name<span style="color: red;">*</span></label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="email">Email<span style="color: red;">*</span></label>
+      <input type="text" id="email" name="emailaddress" placeholder="Your email.." required>
+
+      <label for="message">Message<span style="color: red;">*</span></label>
+      <input type="text" id="message" name="complaint" placeholder="Your Message.." required>
+    
+      <button type="submit" id="submit" onclick="insertRecord()">Submit</button>
+    </form>
+  </div>
+  <footer>
+    <h4>Copyright© 2023</h4>
+  </footer>
+</body>
+</html>
